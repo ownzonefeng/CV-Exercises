@@ -1,5 +1,5 @@
 function imageFeatures = ComputeDFTMag(img)
-
-error('Implement your function here');
-
+img = im2double(img);
+imageFeatures = abs(fft2(img));
+imageFeatures = reshape(imageFeatures', 1, []);
 end

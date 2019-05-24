@@ -6,8 +6,8 @@ for i = 1:length(bank)
     filtered = imfilter(img, current_filter);
     feature_mean = mean(filtered, 'all');
     feature_std = var(filtered, 0, 'all');
-    ind = (i - 1) * 2 + 1;
-    vect(ind:ind+1) = [feature_mean, feature_std];
+    ind = (i - 1
+    vect(i:i+1) = [feature_mean, feature_std];
 end
 end
         

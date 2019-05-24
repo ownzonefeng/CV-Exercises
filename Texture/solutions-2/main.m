@@ -64,7 +64,7 @@ end
 
 % Investigate effect of different offsets
 
-offset = offsets(2,:);
+offset = offsets(1,:);
 
 for i=1:size(templates,3)
     templateFeaturesCooccur(i,:) = ComputeCooccurFeatures(templates(:,:,i),offset);   
